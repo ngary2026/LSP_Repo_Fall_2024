@@ -19,14 +19,15 @@ public class Driver{
 		System.out.println("Value of Set1 is: " + set1.toString());
 		System.out.println("Value of Set2 is:" + set2.toString() + "\n");
 		
+		System.out.println("Intersection of Set1 and Set2");
+		System.out.println("Result of intersection of Set1 and Set2: " + set1.intersect(set2));
 		
 		System.out.println("Union of Set1 and Set2");
-		set1.union(set2);	// union of set1 and set2
+		set1.union(set2);
 		System.out.println("Result of union of Set1 and Set2: " + set1.toString() + "\n");
 		
 		
-		System.out.println("Intersection of Set1 and Set2");
-		System.out.println("Result of intersection of Set1 and Set2: " + set1.intersect(set2));
+
 
 
 		

@@ -128,12 +128,14 @@ public class IntegerSet  {
 	 * 
 	 * @param intSetb the IntegerSet to union with
 	 */
-	public void union(IntegerSet intSetb) {
+	public List<Integer> union(IntegerSet intSetb) {
+		List<Integer> unionArr = new ArrayList<>();
 		for(int num: intSetb.set) {
 			if(!this.set.contains(num)) {
-				this.set.add(num);
+				unionArr.add(num);
 			}
 		}
+		return unionArr;
 	};
 	
 	/** Set intersection, all elements in s1 and s2. 12 pts.
